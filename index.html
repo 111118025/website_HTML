@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 
@@ -64,6 +62,8 @@
 
             <!-- 文章區域 -->
             <article class="col-lg-9 col-md-8 col-sm-12">
+
+                <!-- 關於我 -->
                 <section id="section1">
                     <h2>關於我</h2>
                     <table>
@@ -80,6 +80,7 @@
                     <p>此外，我也熱愛旅遊、音樂與閱讀，希望將藝術與科技結合，為教學與研究注入更多元的靈感與視野。</p>
                 </section>
 
+                <!-- 求學經歷 -->
                 <section id="section2">
                     <h2>求學經歷</h2>
                     <table class="table table-bordered">
@@ -102,6 +103,7 @@
                     </table>
                 </section>
 
+                <!-- 技能 -->
                 <section id="section3">
                     <h2>工作技能</h2>
                     <table class="table table-bordered">
@@ -120,6 +122,7 @@
                     </table>
                 </section>
 
+                <!-- 音訊介紹 -->
                 <section id="section4">
                     <h2>音訊介紹</h2>
                     <audio controls>
@@ -127,6 +130,7 @@
                     </audio>
                 </section>
 
+                <!-- 視訊介紹 -->
                 <section id="section5">
                     <h2>視訊介紹</h2>
                     <video controls width="300">
@@ -137,22 +141,43 @@
                     </video>
                 </section>
 
+                <!-- ⭐ 作品集（已新增兩張圖片） -->
                 <section id="section6">
                     <h2>作品集</h2>
+
                     <figure class="figure">
-                        <img src="assets/images/mountain.jpg" alt="設計競賽" class="figure-img img-fluid rounded" width="450">
+                        <img src="assets/images/mountain.jpg" alt="設計競賽" class="figure-img img-fluid rounded"
+                            width="450">
                         <figcaption class="figure-caption">設計競賽</figcaption>
                     </figure>
+
                     <figure class="figure">
-                        <img src="assets/images/village.jpg" alt="創業競賽" class="figure-img img-fluid rounded" width="450">
+                        <img src="assets/images/village.jpg" alt="創業競賽" class="figure-img img-fluid rounded"
+                            width="450">
                         <figcaption class="figure-caption">創業競賽</figcaption>
                     </figure>
+
+                    <!-- ⭐ 新增：松菸海報 -->
+                    <figure class="figure">
+                        <img src="松菸時裝電影工廠 a4海報-01.jpg" alt="松菸時裝電影工廠海報"
+                            class="figure-img img-fluid rounded" width="450">
+                        <figcaption class="figure-caption">松菸時裝電影工廠海報</figcaption>
+                    </figure>
+
+                    <!-- ⭐ 新增：年曆設計 -->
+                    <figure class="figure">
+                        <img src="年曆jpg-01.png" alt="年曆設計" class="figure-img img-fluid rounded" width="450">
+                        <figcaption class="figure-caption">年曆設計</figcaption>
+                    </figure>
+
                 </section>
 
+                <!-- PDF -->
                 <section id="section7">
                     <h2>更多資訊</h2>
                     <embed src="assets/pdf/llm models.pdf" width="500" height="600">
                 </section>
+
             </article>
         </div>
     </main>
@@ -162,11 +187,10 @@
         <time datetime="2024-11-17">最後更新日期：2025年12月07日</time>
     </footer>
 
-    <!-- 暗主題切換 & 自動記住功能 -->
+    <!-- 暗主題切換 -->
     <script>
         const toggleBtn = document.getElementById('theme-toggle');
 
-        // 自動套用上次選擇
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-mode');
         }
@@ -181,8 +205,9 @@
         });
     </script>
 
-    <!-- 引入 Bootstrap 的 JS (必須放在頁面最後) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
